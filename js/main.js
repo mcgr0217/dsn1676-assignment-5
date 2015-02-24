@@ -1,13 +1,20 @@
 var $form = $('.form');
-var $add = $('#todo');
-var $new = $('.list');
+var $todo = $('.todo');
+var $list = $('.list');
+var $button = $('.button');
 
 $form.on('submit', function (e) {
-    var $li = $('<li>');
     e.preventDefault();
-    $li.append($todo.val());
-    $list.append($li);
-    $li.on('click', function () {
+    var $li = $('<li>');
+    var $button = $('<button>');
+    $button.html('X');
+    $button.addClass ('check');
+    $button.on('click' function () {
     $li.remove();
-    });
+    });    
+    
+    var $toDoH2 = $('<h2>').html($todo.val());
+    $toDoH2.append($button);
+    
+    $todo
 });
