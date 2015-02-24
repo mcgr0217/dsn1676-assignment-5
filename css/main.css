@@ -1,8 +1,19 @@
+html {
+    background-color: #F8F8F8;
+}
+
 body {
-    padding: 5rem;
+    padding: 3rem;
 }
 .page {
     background-color: lightgrey;
     border-radius: 2rem;
     padding: 2rem;
+    text-align: center;
+}
+
+.title {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2rem;
 }
