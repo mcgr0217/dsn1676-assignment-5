@@ -1,0 +1,8 @@
+body {
+    padding: 5rem;
+}
+.page {
+    background-color: lightgrey;
+    border-radius: 2rem;
+    padding: 2rem;
+}
