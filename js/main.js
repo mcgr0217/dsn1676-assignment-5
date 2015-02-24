@@ -1,6 +1,6 @@
 var $form = $('.form');
 var $todo = $('.todo');
-var $list = $('.list');
+var $added = $('.added');
 var $button = $('.button');
 
 $form.on('submit', function (e) {
@@ -8,13 +8,18 @@ $form.on('submit', function (e) {
     var $li = $('<li>');
     var $button = $('<button>');
     $button.html('X');
-    $button.addClass ('check');
-    $button.on('click' function () {
+    $button.addClass('check');
+    $button.on('click', function () {
     $li.remove();
-    });    
+    });
     
-    var $toDoH2 = $('<h2>').html($todo.val());
-    $toDoH2.append($button);
+    var $todoH2 = $('<h2>').html($todo.val());
+    $todoH2.append($button);
     
-    $todo
+    $todoH2.on('click', function () {
+    $todoH2.addClass ('strikethrough')();
+    });
+    
+    $li.append($todoH2);
+    $added.append($li);
 });
