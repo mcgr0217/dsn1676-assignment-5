@@ -9,11 +9,36 @@ body {
     background-color: lightgrey;
     border-radius: 2rem;
     padding: 2rem;
-    text-align: center;
 }
 
 .title {
     font-family: sans-serif;
     text-align: center;
     font-size: 2rem;
+}
+
+.button {
+    padding: 1rem;
+}
+
+.todo {
+    padding: 1rem;
+    width: 50%;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    opacity: 0.2;
+}
+
+.check { 
+    text-align: right;
+    padding: 1em;
+    position: relative;
+    float: right;
+    margin-right: 2em;
+}
+
+.h2 {
+    width: 100%;
 }
